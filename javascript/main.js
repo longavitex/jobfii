@@ -207,26 +207,22 @@
   var counter = function () {
     if ($(".wrap-counter").length > 0) {
       var a = 0;
-      $(window).scroll(function () {
-        var oTop = $(".wrap-counter").offset().top - window.innerHeight;
-        if (a == 0 && $(window).scrollTop() > oTop) {
-          if ($().countTo) {
-            $(".wrap-counter")
-              .find(".counter-number")
-              .each(function () {
-                var to = $(this).data("to"),
-                  speed = $(this).data("speed"),
-                  formatter = $(this).data("formatter");
-                $(this).countTo({
-                  to: to,
-                  speed: speed,
-                  formatter: formatter,
-                });
-              });
-          }
-          a = 0.1;
-        }
-      });
+
+      if ($().countTo) {
+        $(".wrap-counter")
+          .find(".counter-number")
+          .each(function () {
+            var to = $(this).data("to"),
+              speed = $(this).data("speed"),
+              formatter = $(this).data("formatter");
+            $(this).countTo({
+              to: to,
+              speed: speed,
+              formatter: formatter,
+            });
+          });
+      }
+      a = 0.1;
     }
   };
   /* filter
@@ -1363,13 +1359,21 @@ function removeModalPopup() {
   document.querySelector('html').style.overflow = 'unset'
 }
 
-// listen event click bag icon on header menu
+// listen event click bag icon on register button
 const registerBtn = document.querySelectorAll('.register-btn')
 if (registerBtn) {
   registerBtn.forEach(btn => {
     btn.addEventListener('click', showModalPopup)
   })
 }
+
+
+// listen event click bag icon on change password button
+const changePassBtn = document.querySelector('.change-password-btn')
+if (changePassBtn) {
+  changePassBtn.addEventListener('click', showModalPopup)
+}
+
 
 // listen event click on freelancer item
 const freelancerItems = document.querySelectorAll('.freelancer-item .candidate-infor')

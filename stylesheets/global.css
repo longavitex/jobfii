@@ -297,6 +297,10 @@
     font-size: 24px;
 }
 
+.fs-20 {
+    font-size: 20px;
+}
+
 .gap-40 {
     gap: 40px;
 }
@@ -407,6 +411,10 @@
 
 .p-12 {
     padding: 12px;
+}
+
+.p-10 {
+    padding: 10px;
 }
 
 .p-8 {

@@ -1063,3 +1063,8 @@
 .icon-check:before {
   content: "\e9b2";
 }
+
+.icon-user-check:before {
+  content: "\e9f1";
+  color: #64666c;
+}
