@@ -700,6 +700,25 @@ tbody tr td:nth-child(2) {
     transition: left 0.4s ease;
 }
 
+.dashboard .list-package .pricing-box .btn {
+    top: unset;
+    left: 24px;
+    width: unset;
+    height: unset;
+    transition: all ease 0.3s;
+}
+
+@media (max-width: 992px) {
+    .content-package-main {
+        overflow-x: auto;
+        max-width: 980px;
+    }
+    
+    .content-package-main .table-content-package {
+        width: 800px;
+    }
+}
+
 /* dashboard menu */
 .hamburger-icon {
     width: 20px;
