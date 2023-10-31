@@ -3380,7 +3380,7 @@ input[type="radio"]:checked:after {
 .flat-dashboard-messages .dash-search {
     padding: 25px 23px 18px;
     border: unset;
-    border-right: 2px solid #f5f5f5;
+    border-right: 1px solid #e5e5e5;
 }
 
 .content-tab.dashboard-messages .active {
@@ -3444,8 +3444,8 @@ input[type="radio"]:checked:after {
 .flat-dashboard-messages .right .images img,
 .flat-dashboard-messages .left .people .person img {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     -o-object-fit: cover;
     object-fit: cover;
