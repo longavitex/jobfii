@@ -2990,6 +2990,10 @@
     padding-bottom: 6px;
   }
 
+  .p-40 {
+    padding: 24px;
+  }
+
   .p-32 {
     padding: 20px;
   }

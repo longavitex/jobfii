@@ -5953,7 +5953,8 @@
   margin-bottom: 10px;
 }
 
-.modal-verify-email-block {
+.modal-verify-email-block,
+.modal-confirm-delete-block {
   position: fixed;
   top: 0;
   left: 0;
@@ -5967,11 +5968,22 @@
   transition: all ease-in-out 0.5s;
 }
 
-.modal-verify-email-main {
+.modal-verify-email-main,
+.modal-confirm-delete-main {
   position: absolute;
   width: 540px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   opacity: 1;
+}
+
+.modal-verify-email-main .modal-close-btn i,
+.modal-confirm-delete-main .modal-close-btn i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .modal-verify-email-main .row.block-button {
@@ -5985,9 +5997,60 @@
   padding-right: 0;
 }
 
-.modal-verify-email-block.open {
+.modal-verify-email-block.open,
+.modal-confirm-delete-block.open {
   opacity: 1;
   visibility: visible;
+}
+
+.modal-confirm-delete-block .form-check-input {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #B9B9BF;
+}
+
+.modal-confirm-delete-block .form-check-input:checked {
+  border-color: var(--purple);
+}
+
+.modal-confirm-delete-block input[type="radio"]:checked:after {
+  background-color: var(--purple);
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 12px;
+  height: 12px;
+}
+
+.modal-confirm-delete-block textarea {
+  height: 112px;
+  background-color: var(--surface);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.modal-confirm-delete-block textarea:focus {
+  border-color: var(--purple);
+}
+
+@media (max-width: 576px) {
+
+  .modal-verify-email-main,
+  .modal-confirm-delete-main {
+    width: 320px;
+  }
+
+  .modal-verify-email-main .modal-close-btn i,
+  .modal-confirm-delete-main .modal-close-btn i {
+    font-size: 16px;
+    top: 16px;
+    right: 16px;
+  }
+
+  .modal-confirm-delete-block textarea {
+    height: 100px;
+  }
 }
 
 .group-banner-CTA {

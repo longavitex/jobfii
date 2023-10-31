@@ -404,17 +404,17 @@ thead tr th:nth-child(2) {
 }
 
 tbody tr td:last-child {
-    text-align: end;
+    text-align: -webkit-right;
 }
 
 tbody tr td {
-    padding: 43px 16px 26px;
+    padding: 16px 16px 16px;
     border-bottom: 1px solid #e5e5e5;
     vertical-align: middle;
 }
 
 tbody tr:last-child td {
-    padding: 43px 16px 35px;
+    /* padding: 16px 16px 35px; */
     border-bottom: 0px solid #e5e5e5;
     transition: all 0.3s ease;
 }
@@ -431,8 +431,17 @@ tbody tr td:nth-child(2) {
     background: var(--surface);
 }
 
+.flat-dashboard-applicants .applicants tbody tr .action-icon {
+    background: var(--surface);
+    transition: all ease 0.2s;
+}
+
 .flat-dashboard-applicants .applicants tbody tr:hover .action-icon {
-    background: #fff;
+    background: var(--white);
+}
+
+.dashboard-employer tbody tr td {
+    padding: 12px 16px 16px;
 }
 
 .tbody tr.active,
@@ -457,24 +466,17 @@ tbody tr td:nth-child(2) {
 .flat-dashboard-applicants .applicants .candidates-wrap .images {
     border-radius: 50%;
     overflow: hidden;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin-right: 16px;
 }
 
 .flat-dashboard-applicants .applicants .content .button-now a {
-    background-color: #1481601a;
-    color: #6728D0;
     padding: 4px 12px 4px 12px;
     border-radius: 24px;
     font-size: 12px;
     font-weight: 500;
     margin-right: 12px;
-}
-
-.flat-dashboard-applicants .applicants .content .button-now a:hover {
-    background-color: #6728D0;
-    color: #fff;
 }
 
 .flat-dashboard-applicants .applicants .content h3 {
@@ -615,6 +617,31 @@ tbody tr td:nth-child(2) {
     color: #fff;
 }
 
+.dashboard .button-status.bg-purple {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.dashboard .button-status.bg-green {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.dashboard .button-status.bg-yellow {
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+.dashboard .button-status.bg-critical {
+    background-color: var(--critical);
+    color: var(--white);
+}
+
+.dashboard .button-status.bg-blue {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
 /* flat-dashboard-bottom */
 .flat-dashboard-bottom {
     padding-top: 40px;
@@ -644,7 +671,7 @@ tbody tr td:nth-child(2) {
     gap: 8px;
 }
 
-.dashboard button {
+/* .dashboard button {
     background: #fff;
     color: #222;
     border: 1px solid #e7e7e7;
@@ -655,10 +682,10 @@ tbody tr td:nth-child(2) {
 
 .dashboard button.active {
     color: #fff;
-    background: rgba(20, 160, 119, 1);
+    background: #4403ad;
     border: 1px solid #6728D0;
     border-bottom: 2px solid #6728D0;
-}
+} */
 
 .dashboard .button-time {
     padding: 0 12px;
@@ -713,7 +740,7 @@ tbody tr td:nth-child(2) {
         overflow-x: auto;
         max-width: 980px;
     }
-    
+
     .content-package-main .table-content-package {
         width: 800px;
     }
@@ -1594,6 +1621,10 @@ tbody tr td:nth-child(2) {
     transform: translateY(-50%);
 }
 
+.dashboard .dropdown.show-wrap>a {
+    background-color: var(--surface);
+}
+
 .dashboard .dropdown>a ul {
     position: absolute;
 }
@@ -1774,7 +1805,7 @@ tbody tr td:nth-child(2) {
 .info-wd .input-form2,
 .info-wd .input-form {
     font-style: unset;
-    background: linear-gradient(0deg, #f5f5f5, #f5f5f5), linear-gradient(0deg, #e5e5e5, #e5e5e5);
+    background: var(--surface);
     padding: 0 15px;
     color: #000;
     border: 1px solid #e5e5e5;
@@ -1797,7 +1828,7 @@ tbody tr td:nth-child(2) {
 
 .flat-dashboard-setting .info-wd .dropdown>a {
     width: 100%;
-    background: linear-gradient(0deg, #f5f5f5, #f5f5f5), linear-gradient(0deg, #e5e5e5, #e5e5e5);
+    background: var(--surface);
     border: 1px solid #e5e5e5;
     font-size: 16px;
     padding: 12px 15px;
@@ -2004,7 +2035,7 @@ tbody tr td:nth-child(2) {
     width: 100%;
     overflow-wrap: break-word;
     padding: 15px;
-    background: linear-gradient(0deg, #f5f5f5, #f5f5f5), linear-gradient(0deg, #e5e5e5, #e5e5e5);
+    background: var(--surface);
     border: 1px solid #e5e5e5;
     font-size: 16px;
 }
@@ -2151,7 +2182,7 @@ tbody tr td:nth-child(2) {
 
 .flat-dashboard-setting .message-wrap textarea {
     font-style: unset;
-    background: linear-gradient(0deg, #f5f5f5, #f5f5f5), linear-gradient(0deg, #e5e5e5, #e5e5e5);
+    background: var(--surface);
     padding: 8px 15px;
     color: #000;
     font-size: 16px;
@@ -2298,9 +2329,9 @@ tbody tr td:nth-child(2) {
     padding-right: 16px;
 }
 
-.flat-dashboard-myjob tbody tr:last-child td {
+/* .flat-dashboard-myjob tbody tr:last-child td {
     padding: 31px 16px 35px;
-}
+} */
 
 .flat-dashboard-myjob tbody tr td:nth-child(1) {
     width: 27.2%;
@@ -2607,9 +2638,9 @@ input[type="radio"]:checked:after {
     border: unset;
 }
 
-.flat-dashboard-alerts tbody tr:first-child td {
+/* .flat-dashboard-alerts tbody tr:first-child td {
     padding-top: 38px;
-}
+} */
 
 .flat-dashboard-alerts tbody tr:last-child td {
     padding: 14px 16px 22px;

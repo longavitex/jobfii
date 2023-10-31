@@ -28,6 +28,7 @@
   --green: #37B853;
   --critical: #EB4D4D;
   --yellow: #FFB321;
+  --blue: #504CFE;
 }
 
 /* Reset
@@ -1478,7 +1479,8 @@ input[type="color"],
   left: -50px;
   transition: ease-out 0.3s;
   width: 288px;
-  height: 80vh;
+  height: fit-content;
+  max-height: 80vh;
   padding: 24px;
   text-align: start;
   z-index: 999;

@@ -1345,7 +1345,7 @@ function removeOpenAnswer(index1) {
 // Open Modal pop up 
 const modalPopup = document.querySelector('.modal-popup')
 const modalPopupContainer = document.querySelector('.modal-popup-main')
-const closeModalBtn = document.querySelector('.modal-close')
+const closeModalBtn = document.querySelector('.modal-close-btn')
 
 //Function show modal
 function showModalPopup() {
@@ -1359,7 +1359,7 @@ function removeModalPopup() {
   document.querySelector('html').style.overflow = 'unset'
 }
 
-// listen event click bag icon on register button
+// listen event click on register button
 const registerBtn = document.querySelectorAll('.register-btn')
 if (registerBtn) {
   registerBtn.forEach(btn => {
@@ -1367,13 +1367,17 @@ if (registerBtn) {
   })
 }
 
-
-// listen event click bag icon on change password button
+// listen event click on change password button
 const changePassBtn = document.querySelector('.change-password-btn')
 if (changePassBtn) {
   changePassBtn.addEventListener('click', showModalPopup)
 }
 
+// listen event click on delete profile button
+const deleteProfileBtn = document.querySelector('.change-password .delete-btn')
+if (deleteProfileBtn) {
+  deleteProfileBtn.addEventListener('click', showModalPopup)
+}
 
 // listen event click on freelancer item
 const freelancerItems = document.querySelectorAll('.freelancer-item .candidate-infor')

@@ -209,6 +209,18 @@
     background-color: var(--green);
 }
 
+.bg-critical {
+    background-color: var(--critical);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
 .bg-surface {
     background-color: var(--surface);
     transition: all ease 0.3s;
@@ -443,6 +455,10 @@
 
 .pr-65 {
     padding-right: 65px;
+}
+
+.pr-55 {
+    padding-right: 55px;
 }
 
 .pr-40 {
