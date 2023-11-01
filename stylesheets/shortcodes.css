@@ -5956,8 +5956,7 @@
   margin-bottom: 10px;
 }
 
-.modal-verify-email-block,
-.modal-confirm-delete-block {
+.modal-popup {
   position: fixed;
   top: 0;
   left: 0;
@@ -5971,22 +5970,33 @@
   transition: all ease-in-out 0.5s;
 }
 
-.modal-verify-email-main,
-.modal-confirm-delete-main {
+.modal-popup-main {
   position: absolute;
   width: 540px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   opacity: 1;
 }
 
-.modal-verify-email-main .modal-close-btn i,
-.modal-confirm-delete-main .modal-close-btn i {
+.modal-send-message-main,
+.modal-invite-main {
+  width: 480px;
+}
+
+.modal-popup-main .modal-close-btn i,
+.modal-popup-main .close-modal-message-btn i,
+.modal-popup-main .close-modal-invite-btn i,
+.modal-popup-main .close-modal-meeting-btn i {
   position: absolute;
   top: 20px;
   right: 20px;
   font-size: 20px;
   display: inline-block;
   cursor: pointer;
+}
+
+.modal-popup-main input:not(input[type="checkbox"]),
+.modal-popup-main textarea {
+  background-color: var(--surface) !important;
 }
 
 .modal-verify-email-main .row.block-button {
@@ -6000,8 +6010,7 @@
   padding-right: 0;
 }
 
-.modal-verify-email-block.open,
-.modal-confirm-delete-block.open {
+.modal-popup.open {
   opacity: 1;
   visibility: visible;
 }
@@ -6039,13 +6048,11 @@
 
 @media (max-width: 576px) {
 
-  .modal-verify-email-main,
-  .modal-confirm-delete-main {
+  .modal-popup-main {
     width: 320px;
   }
 
-  .modal-verify-email-main .modal-close-btn i,
-  .modal-confirm-delete-main .modal-close-btn i {
+  .modal-popup-main .modal-close-btn i {
     font-size: 16px;
     top: 16px;
     right: 16px;

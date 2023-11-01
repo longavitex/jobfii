@@ -1390,6 +1390,17 @@ if (freelancerItems) {
   })
 }
 
+// listen event click on edit btn item
+const editBtnItem = document.querySelectorAll('.edit-btn')
+if (editBtnItem) {
+  editBtnItem.forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault
+      showModalPopup()
+    })
+  })
+}
+
 //listen event click and close modal
 if (closeModalBtn) {
   closeModalBtn.addEventListener('click', removeModalPopup)
@@ -1407,6 +1418,134 @@ if (modalPopupContainer) {
   })
 }
 
+
+// Open Modal pop up Send Message
+const modalSendMessage = document.querySelector('.modal-send-message-block')
+const modalSendMessageContainer = document.querySelector('.modal-send-message-main')
+const closeModalSendMessageBtn = document.querySelector('.close-modal-message-btn')
+
+//Function show modal
+function showModalSendMessage() {
+  modalSendMessage.classList.add('open')
+  document.querySelector('html').style.overflow = 'hidden'
+}
+
+//Function close modal
+function removeModalSendMessage() {
+  modalSendMessage.classList.remove('open')
+  document.querySelector('html').style.overflow = 'unset'
+}
+
+// listen event click on register button
+const sendMessageBtn = document.querySelectorAll('.send-message-btn')
+if (sendMessageBtn) {
+  sendMessageBtn.forEach(btn => {
+    btn.addEventListener('click', showModalSendMessage)
+  })
+}
+
+//listen event click and close modal
+if (closeModalSendMessageBtn) {
+  closeModalSendMessageBtn.addEventListener('click', removeModalSendMessage)
+}
+
+//listen event click outside modal-container and close modal
+if (modalSendMessage) {
+  modalSendMessage.addEventListener('click', removeModalSendMessage)
+}
+
+//Stop prevent default when click on container modal
+if (modalSendMessageContainer) {
+  modalSendMessageContainer.addEventListener('click', function (event) {
+    event.stopPropagation()
+  })
+}
+
+
+// Open Modal pop up Invite job
+const modalInvite = document.querySelector('.modal-invite-block')
+const modalInviteContainer = document.querySelector('.modal-invite-main')
+const closeModalInviteBtn = document.querySelector('.close-modal-invite-btn')
+
+//Function show modal
+function showModalInvite() {
+  modalInvite.classList.add('open')
+  document.querySelector('html').style.overflow = 'hidden'
+}
+
+//Function close modal
+function removeModalInvite() {
+  modalInvite.classList.remove('open')
+  document.querySelector('html').style.overflow = 'unset'
+}
+
+// listen event click on register button
+const inviteBtn = document.querySelectorAll('.invite-btn')
+if (inviteBtn) {
+  inviteBtn.forEach(btn => {
+    btn.addEventListener('click', showModalInvite)
+  })
+}
+
+//listen event click and close modal
+if (closeModalInviteBtn) {
+  closeModalInviteBtn.addEventListener('click', removeModalInvite)
+}
+
+//listen event click outside modal-container and close modal
+if (modalInvite) {
+  modalInvite.addEventListener('click', removeModalInvite)
+}
+
+//Stop prevent default when click on container modal
+if (modalInviteContainer) {
+  modalInviteContainer.addEventListener('click', function (event) {
+    event.stopPropagation()
+  })
+}
+
+
+// Open Modal pop up create meeting
+const modalMeeting = document.querySelector('.modal-create-meeting-block')
+const modalMeetingContainer = document.querySelector('.modal-create-meeting-main')
+const closemodalMeetingBtn = document.querySelector('.close-modal-meeting-btn')
+
+//Function show modal
+function showmodalMeeting() {
+  modalMeeting.classList.add('open')
+  document.querySelector('html').style.overflow = 'hidden'
+}
+
+//Function close modal
+function removemodalMeeting() {
+  modalMeeting.classList.remove('open')
+  document.querySelector('html').style.overflow = 'unset'
+}
+
+// listen event click on register button
+const createMeetingBtn = document.querySelectorAll('.create-meeting-btn')
+if (createMeetingBtn) {
+  createMeetingBtn.forEach(btn => {
+    btn.addEventListener('click', showmodalMeeting)
+  })
+}
+
+//listen event click and close modal
+if (closemodalMeetingBtn) {
+  closemodalMeetingBtn.addEventListener('click', removemodalMeeting)
+}
+
+//listen event click outside modal-container and close modal
+if (modalMeeting) {
+  modalMeeting.addEventListener('click', removemodalMeeting)
+}
+
+//Stop prevent default when click on container modal
+if (modalMeetingContainer) {
+  modalMeetingContainer.addEventListener('click', function (event) {
+    event.stopPropagation()
+  })
+}
 
 
 // Fixed sidebar in Term of use

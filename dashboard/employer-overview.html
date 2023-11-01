@@ -859,7 +859,7 @@
                           <div class="action-wrap">
                             <ul class="flex2">
                               <li class="hv-tool" data-tooltip="Create Meeting"><a
-                                  class="action-icon ph ph-video-camera"></a></li>
+                                  class="action-icon ph ph-video-camera create-meeting-btn"></a></li>
                               <li class="hv-tool" data-tooltip="Approve"><a class="action-icon ph ph-check"></a></li>
                               <li class="hv-tool" data-tooltip="Download CV"><a
                                   class="action-icon ph ph-arrow-line-down"></a></li>
@@ -904,7 +904,7 @@
                           <div class="action-wrap">
                             <ul class="flex2">
                               <li class="hv-tool" data-tooltip="Create Meeting"><a
-                                  class="action-icon ph ph-video-camera"></a></li>
+                                  class="action-icon ph ph-video-camera create-meeting-btn"></a></li>
                               <li class="hv-tool" data-tooltip="Approve"><a class="action-icon ph ph-check"></a></li>
                               <li class="hv-tool" data-tooltip="Download CV"><a
                                   class="action-icon ph ph-arrow-line-down"></a></li>
@@ -949,7 +949,7 @@
                           <div class="action-wrap">
                             <ul class="flex2">
                               <li class="hv-tool" data-tooltip="Create Meeting"><a
-                                  class="action-icon ph ph-video-camera"></a></li>
+                                  class="action-icon ph ph-video-camera create-meeting-btn"></a></li>
                               <li class="hv-tool" data-tooltip="Undo Approved"><a class="action-icon ph ph-repeat"></a>
                               </li>
                               <li class="hv-tool" data-tooltip="Download CV"><a
@@ -995,7 +995,7 @@
                           <div class="action-wrap">
                             <ul class="flex2">
                               <li class="hv-tool" data-tooltip="Create Meeting"><a
-                                  class="action-icon ph ph-video-camera"></a></li>
+                                  class="action-icon ph ph-video-camera create-meeting-btn"></a></li>
                               <li class="hv-tool" data-tooltip="Undo Approved"><a class="action-icon ph ph-repeat"></a>
                               </li>
                               <li class="hv-tool" data-tooltip="Download CV"><a
@@ -1042,7 +1042,7 @@
                           <div class="action-wrap">
                             <ul class="flex2">
                               <li class="hv-tool" data-tooltip="Create Meeting"><a
-                                  class="action-icon ph ph-video-camera"></a></li>
+                                  class="action-icon ph ph-video-camera create-meeting-btn"></a></li>
                               <li class="hv-tool" data-tooltip="Undo Approved"><a class="action-icon ph ph-repeat"></a>
                               </li>
                               <li class="hv-tool" data-tooltip="Download CV"><a
@@ -1074,6 +1074,34 @@
         </div>
       </div>
     </section>
+
+    <!-- Start Modal Create Meeting -->
+    <div class="modal-create-meeting-block modal-popup flex-center">
+      <div class="modal-create-meeting-main modal-popup-main bg-white bora-8 p-40 d-flex flex-column">
+        <span class="close-modal-meeting-btn">
+          <i class="ph ph-x"></i>
+        </span>
+        <div class="heading6">Zoom API Setting</div>
+        <form>
+          <div class="mt-24">
+            <label for="inputZoomEmail" class="form-label text-title">Zoom Email</label>
+            <input type="email" class="bg-surface" id="inputZoomEmail" placeholder="hi.avitex@gmail.com">
+          </div>
+          <div class="mt-20">
+            <label for="inputClientID" class="form-label text-title">Zoom client ID</label>
+            <input type="text" class="bg-surface" id="inputClientID" placeholder="1234ghasdfgh0231">
+          </div>
+          <div class="mt-20">
+            <label for="inputClientSecret" class="form-label text-title">Client Secret</label>
+            <input type="text" class="bg-surface" id="inputClientSecret" placeholder="01234567986735463824765">
+          </div>
+          <div class="block-button mt-32">
+            <button class="button-fill-purple button-fill-purple-hover text-button d-block w-100">Get Authorize with zoom</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Emd Modal Create Meeting -->
   </div>
 
 

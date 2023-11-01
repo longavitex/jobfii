@@ -713,7 +713,7 @@
                         <td>
                           <div class="action-wrap">
                             <ul class="flex2">
-                              <li class="hv-tool" data-tooltip="Edit"><a class="action-icon icon-write1"></a></li>
+                              <li class="hv-tool" data-tooltip="Edit"><a class="action-icon icon-write1 edit-btn"></a></li>
                               <li class="hv-tool" data-tooltip="Lock"><a class="action-icon icon-lock1"></a></li>
                               <li class="hv-tool" data-tooltip="Delete"><a class="action-icon ph ph-trash"></a></li>
                             </ul>
@@ -758,7 +758,7 @@
                         <td>
                           <div class="action-wrap">
                             <ul class="flex2">
-                              <li class="hv-tool" data-tooltip="Edit"><a class="action-icon icon-write1"></a></li>
+                              <li class="hv-tool" data-tooltip="Edit"><a class="action-icon icon-write1 edit-btn"></a></li>
                               <li class="hv-tool" data-tooltip="Lock"><a class="action-icon icon-lock1"></a></li>
                               <li class="hv-tool" data-tooltip="Delete"><a class="action-icon ph ph-trash"></a></li>
                             </ul>
@@ -794,7 +794,7 @@
                         <td>
                           <div class="action-wrap">
                             <ul class="flex2">
-                              <li class="hv-tool" data-tooltip="Edit"><a class="action-icon icon-write1"></a></li>
+                              <li class="hv-tool" data-tooltip="Edit"><a class="action-icon icon-write1 edit-btn"></a></li>
                               <li class="hv-tool" data-tooltip="Lock"><a class="action-icon icon-lock1"></a></li>
                               <li class="hv-tool" data-tooltip="Delete"><a class="action-icon ph ph-trash"></a></li>
                             </ul>
@@ -839,7 +839,7 @@
                         <td>
                           <div class="action-wrap">
                             <ul class="flex2">
-                              <li class="hv-tool" data-tooltip="Edit"><a class="action-icon icon-write1"></a></li>
+                              <li class="hv-tool" data-tooltip="Edit"><a class="action-icon icon-write1 edit-btn"></a></li>
                               <li class="hv-tool" data-tooltip="Lock"><a class="action-icon icon-lock1"></a></li>
                               <li class="hv-tool" data-tooltip="Delete"><a class="action-icon ph ph-trash"></a></li>
                             </ul>
@@ -884,7 +884,7 @@
                         <td>
                           <div class="action-wrap">
                             <ul class="flex2">
-                              <li class="hv-tool" data-tooltip="Edit"><a class="action-icon icon-write1"></a></li>
+                              <li class="hv-tool" data-tooltip="Edit"><a class="action-icon icon-write1 edit-btn"></a></li>
                               <li class="hv-tool" data-tooltip="Lock"><a class="action-icon icon-lock1"></a></li>
                               <li class="hv-tool" data-tooltip="Delete"><a class="action-icon ph ph-trash"></a></li>
                             </ul>
@@ -911,6 +911,327 @@
         </div>
       </div>
     </section>
+
+    <!-- Start Modal Send Message -->
+    <div class="modal-edit-post-block modal-popup flex-center">
+      <div class="modal-edit-post-main modal-popup-main">
+        <div class="main-content bg-surface p-40">
+          <section class="page-title-dashboard">
+            <div class="themes-container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 ">
+                  <div class="title-dashboard">
+                    <div class="title-dash flex2">Post A New Job</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+          <section class="flat-dashboard-post flat-dashboard-setting">
+            <div class="themes-container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 ">
+                  <div class="post-new profile-setting bg-white">
+                    <h3 class="title-img">General</h3>
+                    <div class="author-profile border-bt">
+                      <div class="text-button-small pb-12">Upload a Logo:
+                      </div>
+                      <input type="file" id="fileInput" style="display: none;" />
+                      <label for="fileInput" id="customFileLabel">
+                        <span class="text-button">Browser</span>
+                      </label>
+                      <span id="selectedFileName"></span>
+  
+                      <div class="text-button-small mt-24 pb-12">Upload a new cover:
+                      </div>
+                      <input type="file" id="fileInput" style="display: none;" />
+                      <label for="fileInput" id="customFileLabel">
+                        <span class="text-button">Browser</span>
+                      </label>
+                      <span id="selectedFileName"></span>
+                    </div>
+                    <div class="wrap-titles">
+                      <h3 class="title-img">Job Title <span class="color-red">*</span> </h3>
+                      <fieldset class="info-wd">
+                        <input type="text" class="input-form" value="UI UX Designer">
+                      </fieldset>
+                    </div>
+                    <div class="text-editor-wrap">
+                      <h3 class="title-img">Job Description <span class="color-red">*</span> </h3>
+                      <div class="text-editor-main">
+                        <div class="options">
+                          <button class="my-text-btn" data-command="undo"><i class="fas fa-undo"></i></button>
+                          <button class="my-text-btn" data-command="redo"><i class="fas fa-redo"></i></button>
+                          <button class="my-text-btn" data-command="bold"><i class="fas fa-bold"></i></button>
+                          <button class="my-text-btn" data-command="italic"><i class="fas fa-italic"></i></button>
+                          <button class="my-text-btn" data-command="underline"><i class="fas fa-underline"></i></button>
+                          <button class="my-text-btn" data-command="strikeThrough"><i
+                              class="fas fa-strikethrough"></i></button>
+                          <button class="my-text-btn" data-command="formatBlock" data-block="H1">H1</button>
+                          <button class="my-text-btn" data-command="formatBlock" data-block="H2">H2</button>
+                          <button class="my-text-btn" data-command="formatBlock" data-block="H3">H3</button>
+                          <button class="my-text-btn" data-command="justifyLeft"><i
+                              class="fas fa-align-left"></i></button>
+                          <button class="my-text-btn" data-command="justifyCenter"><i
+                              class="fas fa-align-center"></i></button>
+                          <button class="my-text-btn" data-command="justifyRight"><i
+                              class="fas fa-align-right"></i></button>
+                          <button class="my-text-btn" data-command="justifyFull"><i
+                              class="fas fa-align-justify"></i></button>
+                          <button class="my-text-btn" data-command="insertImage"><i class="fas fa-images"></i></button>
+                          <button class="my-text-btn" data-command="createLink"><i class="fas fa-link"></i></button>
+                        </div>
+                        <div class="contentOutput" contenteditable="true"></div>
+  
+                      </div>
+                    </div>
+                    <div class="heading7 pb-16 pt-24 border-top">Information</div>
+                    <div class="form-infor flex flat-form">
+                      <div class="info-box info-wd">
+                        <div id="item_category" class="dropdown titles-dropdown">
+                          <label class="title-user fw-7">Category</label>
+                          <a class="btn-selector nolink input-form"> Accountng/ Finance</a>
+                          <ul>
+                            <li><span>Accountng/ Finance</span></li>
+                            <li><span>User/ Finance</span></li>
+                            <li><span>Admin/ Finance</span></li>
+                          </ul>
+                        </div>
+                        <fieldset class="info-wd">
+                          <h5 class="title-url fw-7">Applicant Deadline Date</h5>
+                          <input type="date" class="input-form">
+                        </fieldset>
+                        <fieldset>
+                          <label class="title-user fw-7">External URL for Apply Job</label>
+                          <input type="url" class="input-form" required>
+                        </fieldset>
+                        <fieldset>
+                          <label class="title-user fw-7">Phone Number <span class="color-red">*</span></label>
+                          <input type="url" class="input-form" required>
+                        </fieldset>
+                        <fieldset>
+                          <label class="title-user fw-7">Salary Type <span class="color-red">*</span></label>
+                          <input type="url" class="input-form" required>
+                        </fieldset>
+                        <fieldset>
+                          <label class="title-user fw-7">Min. Salary</label>
+                          <input type="url" class="input-form">
+                        </fieldset>
+                        <fieldset>
+                          <label class="title-user fw-7">Gender <span class="color-red">*</span></label>
+                          <input type="url" class="input-form" required>
+                        </fieldset>
+                        <fieldset>
+                          <label class="title-user fw-7">Industry <span class="color-red">*</span></label>
+                          <input type="url" class="input-form" required>
+                        </fieldset>
+                        <div id="item_1" class="dropdown titles-dropdown">
+                          <label class="title-user fw-7">No of Vacancy <span class="color-red">*</span></label>
+                          <a class="btn-selector nolink input-form">1 - 5</a>
+                          <ul>
+                            <li><span>1 - 5</span></li>
+                            <li><span>5 - 10</span></li>
+                            <li><span>10 - 20</span></li>
+                            <li><span>>20</span></li>
+                          </ul>
+                        </div>
+                        <fieldset>
+                          <label class="title-user fw-7">Job Country</label>
+                          <input type="url" class="input-form">
+                        </fieldset>
+                        <fieldset>
+                          <label class="title-user fw-7">Functional Area</label>
+                          <input type="url" class="input-form">
+                        </fieldset>
+                        <div id="item_2" class="dropdown titles-dropdown">
+                          <label class="title-user fw-7">Career Level <span class="color-red">*</span></label>
+                          <a class="btn-selector nolink input-form">Manager</a>
+                          <ul>
+                            <li><span>Manager</span></li>
+                            <li><span>Senior</span></li>
+                            <li><span>Fresher</span></li>
+                            <li><span>Intern</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="info-box info-wd">
+                        <div id="item_3" class="dropdown titles-dropdown ">
+                          <label class="title-user fw-7">Type</label>
+                          <a class="btn-selector nolink input-form"> Freelance </a>
+                          <ul>
+                            <li><span>Online</span></li>
+                            <li><span>Freelance</span></li>
+                            <li><span>Offline</span></li>
+                          </ul>
+                        </div>
+                        <div id="item_apply" class="dropdown titles-dropdown">
+                          <label class="title-user fw-7">Job Apply Type</label>
+                          <a class="btn-selector nolink input-form">by email</a>
+                          <ul>
+                            <li><span>by email</span></li>
+                            <li><span>by website</span></li>
+                            <li><span>by link</span></li>
+                          </ul>
+                        </div>
+                        <fieldset>
+                          <label class="title-user fw-7">Job Apply Email</label>
+                          <input type="email" class="input-form" required>
+                        </fieldset>
+                        <fieldset>
+                          <label class="title-user fw-7">Alternate No <span class="color-red">*</span></label>
+                          <input type="email" class="input-form" required>
+                        </fieldset>
+                        <fieldset>
+                          <label class="title-user fw-7">Language <span class="color-red">*</span></label>
+                          <input type="email" class="input-form" required>
+                        </fieldset>
+                        <fieldset>
+                          <label class="title-user fw-7">Max. Salary</label>
+                          <input type="tel" class="input-form" required>
+                        </fieldset>
+                        <fieldset>
+                          <label class="title-user fw-7">Tag</label>
+                          <input type="text" class="input-form" required>
+                        </fieldset>
+                        <div id="item_qualification" class="dropdown titles-dropdown">
+                          <label class="title-user fw-7">Qualification</label>
+                          <a class="btn-selector nolink input-form"> Certificate </a>
+                          <ul>
+                            <li><span>Certificate</span></li>
+                            <li><span>University</span></li>
+                            <li><span>College</span></li>
+                          </ul>
+                        </div>
+                        <fieldset>
+                          <label class="title-user fw-7">Nationality <span class="color-red">*</span></label>
+                          <input type="text" class="input-form" required>
+                        </fieldset>
+                        <div id="item_date" class="dropdown titles-dropdown">
+                          <label class="title-user fw-7">Preferred Candidates</label>
+                          <a class="btn-selector nolink input-form"> 1 month </a>
+                          <ul>
+                            <li><span>1 month</span></li>
+                            <li><span>6 month</span></li>
+                            <li><span>1 year</span></li>
+                          </ul>
+                        </div>
+                        <fieldset>
+                          <label class="title-user fw-7">Max. Salary</label>
+                          <input type="text" class="input-form" value="Master Degree" required>
+                        </fieldset>
+                        <div id="item_date" class="dropdown titles-dropdown">
+                          <label class="title-user fw-7">Experience</label>
+                          <a class="btn-selector nolink input-form"> 3 Years </a>
+                          <ul>
+                            <li><span>1 Years</span></li>
+                            <li><span>3 Years</span></li>
+                            <li><span>5 Years</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-block mt-16 pt-24 pb-24 border-bottom border-top">
+                      <div class="heading7">questions</div>
+                      <div class="list">
+                        <fieldset class="info-wd mt-20">
+                          <h5 class="title-url fw-7">Question 1</h5>
+                          <input type="text" class="input-form">
+                        </fieldset>
+                        <fieldset class="info-wd mt-20">
+                          <h5 class="title-url fw-7">Question 2</h5>
+                          <input type="text" class="input-form">
+                        </fieldset>
+                        <fieldset class="info-wd mt-20">
+                          <h5 class="title-url fw-7">Question 3</h5>
+                          <input type="text" class="input-form">
+                        </fieldset>
+                        <div class="member-button mt-12">
+                          <a href="" class="">
+                            <h4 class="fw-7">Add Another Question</h4>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="photo-wrap mt-24">
+                      <h3>Media</h3>
+                      <ul class="flex">
+                        <li class="file-delete"><img src="../images/dashboard/photo-1.jpg" alt=""><a
+                            class="icon-clear remove-file"></a> </li>
+                        <li class="file-delete"><img src="../images/dashboard/photo-2.jpg" alt=""> <a
+                            class="icon-clear remove-file"></a> </li>
+                        <li class="file-delete"><img src="../images/dashboard/photo-1.jpg" alt=""> <a
+                            class="icon-clear remove-file"></a> </li>
+                      </ul>
+                    </div>
+  
+                    <div class="btn-wrap button-wrap flex2">
+                      <div class="tt-button button-browse">
+                        <input type="file" id="fileInput" style="display: none;" />
+                        <label for="fileInput" id="customFileLabel">
+                          <span class="text-button">Browser</span>
+                        </label>
+                        <span id="selectedFileName"></span>
+                      </div>
+                      <div class="fs-16 text-secondary pl-24"><a>Upload image, video</a> </div>
+                    </div>
+                    <div class="wrap-video pb-24 border-bottom">
+                      <fieldset class="info-wd">
+                        <label class="title-url text-button-small">Introduction Video URL</label>
+                        <input type="url" class="input-form input-style"
+                          value="https://www.youtube.com/watch?v=I6ZLgk_bq90">
+                      </fieldset>
+                    </div>
+                    <div class="contact-wrap info-wd mt-24">
+                      <h3>Location</h3>
+                      <fieldset class="address-box">
+                        <label class="title-user text-button-small">Friendly Address <span
+                            class="color-red">*</span></label>
+                        <input type="text" class="input-form">
+                      </fieldset>
+                      <div id="item_category2" class="dropdown titles-dropdow">
+                        <label class="title-user text-button-small">Location <span class="color-red">*</span></label>
+                        <a class="btn-selector nolink input-form "> Tokyo </a>
+                        <ul>
+                          <li><span>VietNam</span></li>
+                          <li><span>Tokyo</span></li>
+                          <li><span>USA</span></li>
+                          <li><span>England</span></li>
+                        </ul>
+                      </div>
+                      <fieldset class="address-box mt-16">
+                        <label class="title-user text-button-small">Map Location <span class="color-red">*</span></label>
+                        <input type="text" class="input-form">
+                      </fieldset>
+                    </div>
+                    <div class="map-content">
+                      <iframe class="map-box"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7302.453092836291!2d90.47477022812872!3d23.77494577893369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1627293157601!5m2!1svi!2s"
+                        allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="area-wrap info-wd">
+                      <div class="form-social form-wg flex flat-form">
+                        <div class="form-box  wg-box">
+                          <fieldset class="">
+                            <input type="text" class="input-form input-style" value="40.69499198068389">
+                          </fieldset>
+                        </div>
+                        <div class="form-box  wg-box">
+                          <fieldset class="">
+                            <input type="text" class="input-form input-style" value="-73.9959976171989">
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- Emd Modal Send Message -->
   </div>
 
   <script src="../javascript/jquery.min.js"></script>

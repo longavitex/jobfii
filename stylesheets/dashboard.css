@@ -607,7 +607,7 @@ tbody tr td:nth-child(2) {
 .dashboard .button-cancel {
     border: 1px solid #6728D0;
     background-color: #fff;
-    padding: 6px 19px;
+    padding: 8px 20px;
     border-radius: 4px;
     transition: all 0.3s ease;
 }
@@ -2557,6 +2557,40 @@ input[type="radio"]:checked:after {
     margin-bottom: 38px;
 }
 
+.modal-edit-post-main {
+    max-width: 1250px;
+    width: 100%;
+    right: 0;
+    top: 0;
+    overflow-x: auto;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.modal-edit-post-main .main-content {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.modal-edit-post-main .page-title-dashboard {
+    padding: 0 0 32px;
+}
+
+@media (max-width: 1300px) {
+    .modal-edit-post-main {
+        max-width: calc(100vw - 50px);
+    }
+
+    .modal-edit-post-main .main-content {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .modal-edit-post-main .page-title-dashboard {
+        padding: 0 0 24px;
+    }
+}
+
 .border-bt {
     border-bottom: 1px solid #e5e5e5;
 }
@@ -3962,7 +3996,7 @@ input[type="radio"]:checked:after {
     }
 
     .flat-dashboard-setting .profile-setting {
-        padding: 32px 15px 34px;
+        padding: 20px 16px 20px;
     }
 
     .flat-dashboard-setting .author-profile {
