@@ -3960,6 +3960,9 @@
   margin-bottom: 20px;
 }
 
+.wd-findjob-filer.mb-0 {
+  margin-bottom: 0;
+}
 
 .wd-findjob-filer.style-map {
   display: block;

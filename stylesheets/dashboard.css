@@ -556,7 +556,7 @@ tbody tr td:nth-child(2) {
     --arrow-size: 6px;
     position: absolute;
     top: 0px;
-    left: 45%;
+    left: 40%;
     transform: translateX(-50%) translateY(var(--translate-y, 0));
     transition: all 0.3s ease;
     -webkit-transition-delay: 0ms;
@@ -1099,6 +1099,11 @@ tbody tr td:nth-child(2) {
     transform: rotate(270deg);
 }
 
+#sidebar-menu ul li a .dash-icon::before,
+#sidebar-menu ul li a .dash-icon {
+    color: #64666c;
+}
+
 #sidebar-menu ul li ul.sub-menu2 li.ff-active a {
     background: #f5f5f2;
     color: #6728D0;
@@ -1115,10 +1120,6 @@ tbody tr td:nth-child(2) {
     color: #6728D0;
 }
 
-#sidebar-menu ul li a .dash-icon::before,
-#sidebar-menu ul li a .dash-icon {
-    color: #64666c;
-}
 
 .down-menu {
     margin: 0;
@@ -2507,7 +2508,7 @@ input[type="radio"]:checked:after {
 }
 
 .flat-dashboard-post .btn-wrap {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .flat-dashboard-post .wrap-titles {
@@ -2522,7 +2523,7 @@ input[type="radio"]:checked:after {
 }
 
 .flat-dashboard-post .text-editor-wrap {
-    margin-bottom: 51px;
+    margin-bottom: 24px;
     border: 0;
     padding: 0;
 }
@@ -4030,7 +4031,7 @@ input[type="radio"]:checked:after {
     }
 
     .flat-dashboard-post .text-editor-wrap {
-        margin-bottom: 40px;
+        margin-bottom: 16px;
     }
 
     .flat-dashboard-password .change-password {
