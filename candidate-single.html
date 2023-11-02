@@ -65,34 +65,40 @@
     </div>
   </div>
   <!-- /preload -->
-  <div class="wd-popup-job-apply style2">
-    <div class="modal-menu__backdrop"></div>
-    <div class="content">
-      <h6>Apply For This Job</h6>
-      <p>Select A Your CV</p>
-      <form action="get">
-        <div class="group-seclect-file">
-          <div class="group-file">
-            <div class="inner left">
-              <input class="custom-file" type="file" name="profile" required="">
-              <i class="icon-file-pdf"></i>
-            </div>
-            <div class="inner right">
-              <input class="custom-file" type="file" name="profile" required="">
-              <i class="icon-file-doc"></i>
-            </div>
-          </div>
-        </div>
-        <textarea placeholder="Message"></textarea>
-        <div class="group-radio">
-          <input type="radio"><label>You accept our <a href="#!">Terms</a> and <a href="#!">Conditions</a> and <a
-              href="#">Privacy Policy</a> </label>
-        </div>
-        <button>Apply Job</button>
-      </form>
+  
+  <!-- Start Modal Invite For Job -->
+  <div class="modal-invite-block modal-popup flex-center">
+    <div class="modal-invite-main modal-popup-main bg-white bora-8 p-40 d-flex flex-column">
+      <span class="close-modal-invite-btn">
+        <i class="ph ph-x"></i>
+      </span>
+      <div class="heading6 text-center">Invite to apply job</div>
+      <div class="text-title mt-24">Select job to invite this user:</div>
+      <div class="form-check mt-12">
+        <input class="form-check-input mt-6" type="checkbox" value="" id="inviteCheck1">
+        <label class="form-check-label body3" for="inviteCheck1">
+          Designer UI UX
+        </label>
+      </div>
+      <div class="form-check mt-12">
+        <input class="form-check-input mt-6" type="checkbox" value="" id="inviteCheck2">
+        <label class="form-check-label body3" for="inviteCheck2">
+          Developer FullStack
+        </label>
+      </div>
+      <div class="form-check mt-12">
+        <input class="form-check-input mt-6" type="checkbox" value="" id="inviteCheck3">
+        <label class="form-check-label body3" for="inviteCheck3">
+          Project Manager
+        </label>
+      </div>
+      <div class="block-button mt-32">
+        <button class="button-fill-purple button-fill-purple-hover text-button d-block w-100">Invite</button>
+      </div>
     </div>
   </div>
-  <!-- end -->
+  <!-- Emd Modal Invite For Job -->
+
   <!-- popup nav menu-mobile-->
   <div class="menu-mobile-popup">
     <div class="modal-menu__backdrop"></div>
@@ -558,8 +564,8 @@
           </div>
         </div>
         <div class="author-archive-footer">
-          <button class="tf-btn btn-popup button-fill-purple-hover">Invite</button>
-          <button class="tf-btn btn-author">Message</button>
+          <button class="tf-btn btn-popup button-fill-purple-hover invite-btn">Invite</button>
+          <a href="dashboard/candidates-messages.html" class="tf-btn btn-author">Message</a>
         </div>
       </div>
     </div>
@@ -758,7 +764,7 @@
           </article>
         </div>
         <div class="col-lg-4">
-          <div class="cv-form-details stc po-sticky job-sg">
+          <div class="cv-form-details stc job-sg">
             <ul class="list-infor">
               <li>
                 <div class="category">Career Finding</div>
@@ -1105,7 +1111,7 @@
   <script src="javascript/jquery.fancybox.js"></script>
   <script src="javascript/plugin.min.js"></script>
   <script src='javascript/wow.min.js'></script>
-  <script src="javascript/range-side.js"></script>
+  <!-- <script src="javascript/range-side.js"></script> -->
   <script src='javascript/jquery.nice-select.min.js'></script>
   <script src="javascript/phosphor-icons.js"></script>
   <script src="javascript/slick.min.js"></script>

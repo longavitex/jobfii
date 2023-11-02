@@ -4348,7 +4348,7 @@
   right: 0;
   left: 0;
   transform: translateY(-50%);
-  padding: 24px 24px 24px 24px;
+  padding: 40px;
   background: #ffffff;
   border-radius: 8px;
   max-width: 496px;
@@ -4358,8 +4358,9 @@
 }
 
 .wd-popup-job-apply.style2 .content {
-  max-width: 600px;
+  max-width: 576px;
 }
+
 
 .wd-popup-form .content .content-right {
   background: #fff;
@@ -4540,6 +4541,25 @@
   color: #121212;
 }
 
+.wd-popup-job-apply .content .upload-cv .custom-file {
+  display: none;
+}
+
+.wd-popup-job-apply .content .upload-cv label {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
 .wd-popup-job-apply .content .right .custom-file::before {
   content: "Doc";
 }
@@ -4554,27 +4574,32 @@
 
 .wd-popup-job-apply .content .group-file {
   display: flex;
-  margin-left: -40px;
-  padding: 16px;
+  margin-left: -16px;
   border-radius: 8px;
-  padding-bottom: 14px;
 }
 
 .wd-popup-job-apply .content .group-file .inner {
-  width: calc(50% - 40px);
-  margin-left: 40px;
-  padding: 13px 55px 13px 12px;
-  background: rgba(20, 129, 96, 0.1);
-  border-radius: 8px;
   position: relative;
+  width: calc(50% - 16px);
+  margin-left: 16px;
+  padding: 13px 55px 13px 12px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  transition: all ease 0.3s;
 }
 
 .wd-popup-job-apply .content .group-file .inner i {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 23px;
+  right: 16px;
   font-size: 39px;
+}
+
+.wd-popup-job-apply .content .group-file .inner:hover {
+  background: var(--surface);
+  border-color: var(--purple);
 }
 
 .wd-popup-job-apply .content p {
@@ -4590,9 +4615,43 @@
   padding: 12px 16px;
   font-size: 16px;
   line-height: 26px;
-  height: 80px;
+  height: 120px;
   border-color: transparent;
-  margin-bottom: -6px;
+}
+
+@media (max-width: 640px) {
+  .wd-popup-job-apply .content {
+    padding: 24px;
+  }
+
+  .wd-popup-job-apply.style2 .content {
+    max-width: 320px;
+    max-height: 90vh;
+    height: fit-content;
+    overflow-x: auto;
+  }
+
+  .wd-popup-job-apply.style2 .content::-webkit-scrollbar {
+    width: 6px;
+    background-color: var(--white);
+    border: 1px solid var(--line);
+  }
+
+  .wd-popup-job-apply.style2 .content::-webkit-scrollbar-thumb {
+    background-color: #c2c2c2;
+    border-radius: 6px;
+  }
+
+  .wd-popup-job-apply .content .upload-cv label {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .wd-popup-job-apply .content textarea {
+    height: 80px;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .wd-popup-job-apply .content textarea::placeholder {
@@ -4600,7 +4659,6 @@
 }
 
 .wd-popup-job-apply .content .group-seclect-file {
-  border: 1px solid #e5e5e5;
   border-radius: 8px;
   margin-bottom: 32px;
 }
@@ -5977,15 +6035,18 @@
   opacity: 1;
 }
 
+.modal-invite-main,
 .modal-send-message-main,
-.modal-invite-main {
+.modal-create-meeting-main,
+.modal-schedule-meeting-main {
   width: 480px;
 }
 
 .modal-popup-main .modal-close-btn i,
 .modal-popup-main .close-modal-message-btn i,
 .modal-popup-main .close-modal-invite-btn i,
-.modal-popup-main .close-modal-meeting-btn i {
+.modal-popup-main .close-modal-meeting-btn i,
+.modal-popup-main .close-modal-schedule-meeting-btn i {
   position: absolute;
   top: 20px;
   right: 20px;

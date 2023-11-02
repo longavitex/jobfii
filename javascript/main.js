@@ -1548,6 +1548,50 @@ if (modalMeetingContainer) {
 }
 
 
+// Open Modal pop up schedule meeting
+const modalScheduleMeeting = document.querySelector('.modal-schedule-meeting-block')
+const modalScheduleMeetingContainer = document.querySelector('.modal-schedule-meeting-main')
+const closeModalScheduleMeetingBtn = document.querySelector('.close-modal-schedule-meeting-btn')
+
+//Function show modal
+function showModalScheduleMeeting() {
+  modalScheduleMeeting.classList.add('open')
+  document.querySelector('html').style.overflow = 'hidden'
+}
+
+//Function close modal
+function removeModalScheduleMeeting() {
+  modalScheduleMeeting.classList.remove('open')
+  document.querySelector('html').style.overflow = 'unset'
+}
+
+// listen event click on register button
+const scheduleMeetingBtn = document.querySelectorAll('.schedule-meeting-btn')
+if (scheduleMeetingBtn) {
+  scheduleMeetingBtn.forEach(btn => {
+    btn.addEventListener('click', showModalScheduleMeeting)
+  })
+}
+
+//listen event click and close modal
+if (closeModalScheduleMeetingBtn) {
+  closeModalScheduleMeetingBtn.addEventListener('click', removeModalScheduleMeeting)
+}
+
+//listen event click outside modal-container and close modal
+if (modalScheduleMeeting) {
+  modalScheduleMeeting.addEventListener('click', removeModalScheduleMeeting)
+}
+
+//Stop prevent default when click on container modal
+if (modalScheduleMeetingContainer) {
+  modalScheduleMeetingContainer.addEventListener('click', function (event) {
+    event.stopPropagation()
+  })
+}
+
+
+
 // Fixed sidebar in Term of use
 const sectionFixed = document.querySelector('.section-fixed-sidebar');
 const divToFix = document.querySelector('.section-fixed-sidebar .text-content');

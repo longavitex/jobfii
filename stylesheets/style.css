@@ -1327,7 +1327,7 @@ input[type="color"],
 }
 
 .sticky-area-wrap .header-ct-right .bell .sub-notification::-webkit-scrollbar-thumb {
-  background-color: var(--line);
+  background-color: #c2c2c2;
   border-radius: 6px;
 }
 
@@ -1499,7 +1499,7 @@ input[type="color"],
 
 .sticky-area-wrap .header-ct-right .account .sub-account::-webkit-scrollbar-thumb {
   border-radius: 6px;
-  background-color: var(--line);
+  background-color: #c2c2c2;
 }
 
 .sticky-area-wrap .header-ct-right .account::after {
@@ -2789,7 +2789,7 @@ input[type="color"],
   height: 80px;
   border-radius: 99px 99px 0 99px;
   overflow: hidden;
-  z-index: 8;
+  z-index: 100;
   cursor: pointer;
 }
 
