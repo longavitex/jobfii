@@ -47,7 +47,13 @@
       }, "slow")))
   });
 
-  
+    t(".left-menu").on("click", function (e) {
+        $("body").removeClass("sidebar-enable");
+    })
+
+    t("#sidebar-menu").on("click", function (e) {
+        e.stopPropagation()
+    })
 
   $(function () {
     
