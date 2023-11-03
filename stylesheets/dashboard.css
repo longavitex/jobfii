@@ -317,6 +317,7 @@
 .flat-dashboard-dyagram .toolbar-box {
     margin-bottom: 12px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .flat-dashboard-dyagram .box-notifications {
@@ -836,6 +837,10 @@ tbody tr td:nth-child(2) {
 
 #sidebar-menu {
     padding: 24px;
+}
+
+#left-menu-btn {
+    display: none;
 }
 
 #sidebar-menu .sub-account-item {
@@ -3825,13 +3830,15 @@ input[type="radio"]:checked:after {
         /* overflow: hidden; */
     }
 
-        .sidebar-enable .left-menu #sidebar-menu {
-            background-color: var(--white);
-            width: 288px;
-            /* height: max-content;
-            max-height: max-content; */
-            /* overflow-x: auto; */
-        }
+    .sidebar-enable .left-menu #sidebar-menu {
+        background-color: var(--white);
+        width: 288px;
+    }
+
+    #left-menu-btn {
+        display: flex;
+        cursor: pointer;
+    }
 
     .dashboard.show .dashboard__content {
         margin-left: 0;
@@ -3950,6 +3957,7 @@ input[type="radio"]:checked:after {
     .flat-dashboard-dyagram .wrap-dyagram .box-dyagram {
         width: 100%;
         margin-bottom: 20px;
+        padding: 20px 16px 0 16px;
     }
 
     .flat-dashboard-applicants .applicants .title-appli {
@@ -4196,7 +4204,6 @@ input[type="radio"]:checked:after {
 
     .flat-dashboard-dyagram .wrap-dyagram .box-dyagram h3 {
         margin-left: 0;
-        margin-bottom: 10px;
     }
 
     .flat-dashboard-dyagram .toolbar {
